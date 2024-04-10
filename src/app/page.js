@@ -1,94 +1,65 @@
 import Image from "next/image";
-import styles from "./page.module.css";
+import styles from "../../styles/Home.module.css";
+import HomePageCard from "./components/HomePageCard";
 
 export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.description}>
         <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
+          Get Your Legal Questions For Free.
         </p>
         <div>
           <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+            href={"https://www.kyle-j-hilton.com/"}
             target="_blank"
             rel="noopener noreferrer"
           >
             By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
+            Kyle James Solutions
           </a>
         </div>
       </div>
 
       <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+        <h1>
+          WADE
+        </h1>
+      </div>
+      <div>
+      <p>
+        Ask A Lawer
+        </p>
       </div>
 
       <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <HomePageCard 
+        href={"/"} 
+        cardName="Ask us anything!" 
+        message="Get free advice from real lawers before you 
+                  decide to hire one." 
+      />
+      <HomePageCard 
+        href={"/"} 
+        cardName=" Time to hire a lawer?" 
+        message="If its time to hire a lawer we can connect you
+            with the best one for whatever type of case you need 
+            handled." 
+      />
+      <HomePageCard 
+        href={"https://www.kyle-j-hilton.com/"} 
+        cardName="Reviews" 
+        message="Hear real stories from people just like 
+                you who we've helped." 
+      />
+      <HomePageCard 
+        href={"https://www.kyle-j-hilton.com/websites"} 
+        cardName="Austin Wade's Story" 
+        message="Learn about our founding lawer and his mission to 
+                provide legal help to anyone regaurdless of their 
+                financial situation." 
+      />
       </div>
     </main>
   );
